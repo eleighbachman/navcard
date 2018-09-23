@@ -1,0 +1,64 @@
+{
+  "Credit card" : {
+    "icon": "fa fa-credit-card",
+    "class": "information",
+    "content": {
+      "banner": "Yay! You qualify for a credit card.",
+      "subBanner":"A credit card is a great option for you right now.",
+      "table" : {
+        "tableHeader": "Here's what issuers are looking for",
+        "tableElements": [
+          { "name": "Personal credit score", "value": 706 },
+          { "name": "Personal credit age", "value": "16yr." },
+          { "name": "Personal inquiries", "value": 2 },
+          { "name": "Personal bankruptcies", "value": 0 },
+          { "name": "Personal credit utilization", "value": "32%" },
+          { "name": "Personal credit limit" , "value": "$49,300" }
+        ]
+      }
+    }
+  },
+  "Term loan" : {
+    "icon": "fa fa-handshake-o",
+    "class": "addContent",
+    "content": {
+      "icon": "fa fa-briefcase",
+      "header": "Add your business",
+      "subheader": "For term loan options, add your business",
+      "button": {
+        "class": "add",
+        "icon": "fa fa-plus-circle"
+      }
+    },
+    "addForm": [
+      { "name": "Business Name", "type": "text", "formValue": "Donut Co" },
+      { "name": "Business Owner", "type": "text", "formValue": "Liz Hennessy" },
+      {"name": "Street Address", "type": "text", "formValue": "428 5th Avenue" },
+      {"name": "City", "type": "text", "formValue": "Salt Lake City" },
+      {"name": "State", "type": "text", "formValue": "Utah" },
+      {"name": "Zip Code", "type": "text", "formValue": "84103"}
+    ]
+  },
+  "Personal" : {
+    "icon": "fa fa-user-circle-o",
+    "class": "addContent",
+    "content": {
+      "icon": "fa fa-id-card",
+      "header": "Add your personal information",
+      "subheader": "Add your personal details to refine your results",
+      "button": {
+        "class": "add",
+        "icon": "fa fa-plus-circle"
+      }
+    },
+    "addForm": [
+      { "name": "First Name", "type": "text", "formValue": "" },
+      { "name": "Last Name", "type": "text", "formValue": "" },
+      {"name": "Street Address", "type": "text", "formValue": "" },
+      {"name": "Date of Birth", "type": "date", "formValue": "" },
+      {"name": "City", "type": "text", "formValue": "" },
+      {"name": "State", "type": "text", "formValue": "" },
+      {"name": "Zip Code", "type": "text", "formValue": ""}
+    ]
+  }
+}

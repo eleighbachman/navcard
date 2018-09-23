@@ -1,0 +1,200 @@
+/* === GLOBAL / MAIN APP === */
+.App {
+  text-align: center;
+  background-color: #fff;
+  width: 55%;
+  min-height: 300px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 25px;
+  box-shadow: 2px 2px 10px #888888;
+}
+
+
+/* === HEADER ELEMENTS === */
+
+.Header {
+  border: 1px solid #d0d2d6;
+  width: 100%;
+  min-height: 80px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+}
+
+.headerButton {
+  flex-grow: 1;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #d0d2d6;
+}
+
+.headerButton:last-child {
+  border: 0px;
+}
+
+.headerButton:hover {
+  cursor: pointer;
+}
+
+.headerButton span {
+  flex-grow: 1;
+  margin: 0;
+}
+
+
+.headerButton i {
+  color: #919499;
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.headerButton.active i {
+  color: #444751;
+}
+
+.headerButton.active {
+  background-color: #d0d2d6;
+}
+
+/* === CARD BODY === */
+
+.card {
+  text-align: left;
+}
+
+.card {
+  padding-bottom: 25px;
+}
+
+/* INFORMATION CARD */
+.information .banner {
+  background-color: #1e93e7;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  border: 1px solid #dae6e1;
+  border-radius: 3px;
+  margin: 10px 0px;
+  min-height: 50px;
+  padding: 20px;
+}
+
+.information .table p {
+  display: flex;
+  margin: 0px;
+  justify-content: space-between;
+  border-top: 1px solid #d0d2d6;
+  padding: 10px 0px;
+  padding-right: 10px;
+}
+
+.table p:last-child {
+  border-bottom: 1px solid #d0d2d6;
+}
+
+/* ADD CONTENT CARD */
+.addContent {
+  text-align: center;
+}
+
+.addContent .addActionBody, .card .form {
+  border: 1px solid #d0d2d6;
+  border-radius: 3px;
+  margin: 10px 0px;
+  min-height: 250px;
+  padding: 20px;
+}
+
+.addContent h1 i {
+  font-size: 48px;
+  background-color: #1e93e7;
+  padding: 20px;
+  border-radius: 100%;
+  color: #fff;
+}
+
+.addContent .actionButton {
+  font-size: 32px;
+}
+
+.addContent .actionButton:hover {
+  cursor: pointer;
+}
+
+.addContent .buttonClass {
+  font-size: 12px;
+  padding-top: 5px;
+  margin: 0px;
+}
+
+/* === FORM === */
+
+.card .form {
+  border-left: 15px solid #1e93e7;
+}
+
+.form .formContainer {
+  width: 90%;
+  margin: auto;
+}
+.form .formContainer input {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  height: 25px;
+  margin: 5px 0px;
+  padding: 0px 10px;
+  outline: 0;
+  font-size: 14px;
+  color: #444751;
+}
+
+.form .formContainer input:focus {
+  background-color: #fff;
+}
+
+.form .formContainer input::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+.form .formContainer button {
+  background-color: #1e93e7;
+  width: 100px;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  outline: 0;
+  margin-top: 40px;
+}
+
+.form .formContainer button:hover {
+  cursor: pointer;
+  background-color: #444751;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .App {
+    margin-left: 200px;
+  }
+  .headerButton {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    margin-left: 100px;
+  }
+}
